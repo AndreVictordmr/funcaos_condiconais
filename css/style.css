@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#card{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+
+
+    text-align: center;
+
+    place-self: center center;
+}
