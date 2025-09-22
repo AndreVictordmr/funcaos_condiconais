@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Funçoes condiçonais</title>
-    </head>
-    <body>
-        <?php 
-            /* EPS
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funçoes condiçonais</title>
+</head>
+
+<body>
+    <?php
+    /* EPS
             Estrutura de dados => Variavel e arrays(indexado e associativos)
             
             Processamento 
@@ -87,7 +89,7 @@
             calculadora('*');
             */
 
-            $pessoa=[
+    /*$pessoa=[
                 'nome'=>"Gustavo",
                 'idade'=>20,
                 'peso'=>50,
@@ -98,50 +100,51 @@
             function recomendar_lazer($hobbie,$idade){
 
                 //operaçao 
-                /*
+               
                 operaçao unaria -> ! -> not
                 operaçao binaria -> $idade >= 18
                 operaçao ternaria -> condiçao ? V:F
-                */
                 $adulto = $idade >= 18 ? true:false;
                 if ($adulto) {
                     echo "------Conteúdos Sensiveis------ <br>";
-
+                    
                     switch ($hobbie) {
                         case 'Charutos':
                             echo "------Lista de Charutos------ <br>";
                             break;
-
-                        case 'Futebol':
-                             echo '------Lista de partidas de futebol------ <br>';
-                            break;
-
-                        default:
-                            echo '------Lista de conteudo generico------ <br>';
-                            break;
-                    };
-                }
-
-                echo "------Conteúdos Gerais------ <br>";
-
-                switch ($hobbie) {
-                    case 'Filmes':
-                        echo "------Lista de filmes------ <br>";
-                        break;
-
-                    case 'Jogos':
-                         echo '------Lista de Animes------ <br>';
-                        break;
-
-                    default:
-                        echo '------Lista de conteudo gerais------ <br>';
-                         break;
-                };
-
-
-            }
-
+                            
+                            case 'Futebol':
+                                echo '------Lista de partidas de futebol------ <br>';
+                                break;
+                                
+                                default:
+                                echo '------Lista de conteudo generico------ <br>';
+                                break;
+                            };
+                        }
+                        
+                        echo "------Conteúdos Gerais------ <br>";
+                        
+                        switch ($hobbie) {
+                            case 'Filmes':
+                                echo "------Lista de filmes------ <br>";
+                                break;
+                                
+                                case 'Jogos':
+                                    echo '------Lista de Animes------ <br>';
+                                    break;
+                                    
+                                    default:
+                                    echo '------Lista de conteudo gerais------ <br>';
+                                break;
+                            };
+                                
+                                
+                        }
+                            
             recomendar_lazer($pessoa['hobbies'][1],$pessoa['idade']);
-        ?>
-    </body>
+        */
+    ?>
+</body>
+
 </html>
