@@ -5,7 +5,6 @@
     function cadatras_ninja($nome, $valor,$nivel){
         echo "<p>Nome: $nome</p>";
         echo claDescricao($valor);
-        echo missoes($nome, $nivel);
     }
 
 
