@@ -89,7 +89,7 @@
             calculadora('*');
             */
 
-    /*$pessoa=[
+    /*  $pessoa=[
                 'nome'=>"Gustavo",
                 'idade'=>20,
                 'peso'=>50,
@@ -144,6 +144,22 @@
                             
             recomendar_lazer($pessoa['hobbies'][1],$pessoa['idade']);
         */
+
+
+
+        //Revisao sobre Funçoes
+        function exibir_mensagem($texto, $valor){
+            //condicionais
+            if($valor == 123){
+                echo "Olá $texto estou dentro da funçao";
+            }else if($valor == 0){
+                echo "Olá $texto";
+            }else{
+                echo "Senha incorreta";
+            }
+        }
+
+        exibir_mensagem("joao",0);
     ?>
 </body>
 
