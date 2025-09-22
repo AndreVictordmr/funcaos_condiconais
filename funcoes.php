@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Funçoes condiçonais</title>
-</head>
-
-<body>
-    <?php
+<?php
     /* EPS
             Estrutura de dados => Variavel e arrays(indexado e associativos)
             
@@ -147,20 +137,18 @@
 
 
 
-        //Revisao sobre Funçoes
-        function exibir_mensagem($texto, $valor){
-            //condicionais
-            if($valor == 123){
-                echo "Olá $texto estou dentro da funçao";
-            }else if($valor == 0){
-                echo "Olá $texto";
-            }else{
-                echo "Senha incorreta";
-            }
+    //Revisao sobre Funçoes
+    function exibir_mensagem($texto, $valor)
+    {
+        //condicionais
+        if ($valor == 123) {
+            echo "Olá $texto estou dentro da funçao";
+        } else if ($valor == 0) {
+            echo "Olá $texto";
+        } else {
+            echo "Senha incorreta";
         }
+    }
 
-        exibir_mensagem("joao",0);
-    ?>
-</body>
-
-</html>
+    exibir_mensagem("joao", 0);
+?>
