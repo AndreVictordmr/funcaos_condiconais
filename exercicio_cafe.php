@@ -10,10 +10,9 @@
 
        
         <?php
-        include 'bloco_cafe.php';
-            for($i = 0; $i<count($ninja);$i++){    
-                exibirCard($ninja[$i]);
-            }
+        require_once 'sistema_cadastro/bloco_cafe.php';
+        
+            exibirCard($ninja[0]);
         ?>
        
     </body>

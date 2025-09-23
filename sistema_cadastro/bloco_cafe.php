@@ -10,8 +10,17 @@
             echo "<p>Missoes Realizadas: Não possui registro</p>";
         }else{
             echo "<p>Missoes Realizadas: " . implode(',', $ninja['missoes_realizadas']) . "</p>";
+        }if( $ninja['rank']==1){
+            echo "<p>Rank: D</p>";
+        }elseif( $ninja['rank']==2){
+            echo "<p>Rank: C</p>";
+        }elseif( $ninja['rank']==3){
+            echo "<p>Rank: B</p>";
+        }elseif( $ninja['rank']==4){
+            echo "<p>Rank: A</p>";
+        }elseif( $ninja['rank']==5){
+            echo "<p>Rank: S</p>";
         }
-        echo "<p>Rank: " . $ninja['rank'] . "</p>";
 
         if ($ninja['tem_filhos']) {
             echo "<p>Possui Filhos: sim </p>";
